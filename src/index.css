@@ -22,6 +22,7 @@
   .text-g{
     font-size: 64px;
     font-weight: 900;
+    line-height: 4rem;
   }
   .flit{
     background: rgba(255, 255, 255, 0.02);
@@ -37,6 +38,10 @@
     background-image: linear-gradient(to right , #D9DCF1, #D9DCF11C );
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 1.2rem;
+  }
+  .hi{
+    line-height: 3rem !important;
   }
   .body{
     animation: shine 2s ease-in-out infinite alternate;

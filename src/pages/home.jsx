@@ -22,11 +22,11 @@ export const Home = () =>{
                 <div className="outer">
                     <Navbar></Navbar>
                     <div className="w-full h-fit flex flex-col-reverse sm:flex-row px-2 sm:px-16 py-16">
-                        <div className="w-full sm:w-2/3">
-                            <p className="still text-3xl font-black md:text-g text-satoshi text-relieve">
+                        <div className="w-full md:w-2/3">
+                            <p className="still leading-10 h-fit  font-black sm:text-g text-satoshi text-relieve">
                                 Revolutionize the way you save and grow your wealth
                             </p> 
-                            <p className="my-1 text-md text-relieve text-satoshi">
+                            <p className="text-md text-relieve text-satoshi">
                             Transform your savings and experience a smarter, more rewarding way to save, with features like budget tracking, goals and rewards, and mobile deposits
                             </p>
                             <span className="block my-4">
@@ -50,8 +50,8 @@ export const Home = () =>{
                         </span>
                     </div>
                 </div>
-                <div className="w-full h-auto  md:-mt-52">
-                        <img className="w-auto h-auto" src={Bubbles} alt="" />
+                <div className="w-full  md:-mt-52">
+                        <img className="" src={Bubbles} alt="" />
                 </div>
                 <div className="w-full h-fit p-1 md:p-16">
                     <div className="w-auto h-fit">
@@ -128,7 +128,7 @@ export const Home = () =>{
                 </div>
                 <div className="w-auto my-2 px-4 flex flex-col-reverse sm:flex-row h-fit sm:h-80 rounded-xl cover sm:mx-16 border-gray-600 border-1 mb-10">
                     <div className="flex flex-col justify-center w-full sm:w-3/5 my-4 sm:my-0">
-                        <h1 className="still w-full text-satoshi text-2xl md:text-[40px] font-black ">
+                        <h1 className="still hi w-full text-satoshi text-2xl md:text-[40px] font-black ">
                             Empower Your Finances and Transform Your Savings
                         </h1>
                         <span className="block my-3">

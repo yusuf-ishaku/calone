@@ -3,7 +3,7 @@ export const Navbar = () =>{
         <>
             <div className="w-auto flex fly mx-1 sm:mx-16 py-8  h-fit">
                 <span className="block w-fit text-xl text-zen">Caleon</span>
-                <div className="w-fit hidden  sm:flex ml-auto items-center text-lg text-relieve text-satoshi">
+                <div className="w-fit hidden  md:flex ml-auto items-center text-lg text-relieve text-satoshi">
                     <span className="block mx-3">Invest</span>
                     <span className="block mx-3">
                         Save
