@@ -28,6 +28,33 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .body{
+    animation: shine 2s ease-in-out infinite alternate;
+  }
+  .end{
+    animation: dim 2s ease-in-out infinite alternate;
+  }
+  @keyframes dim {
+    0%{
+      visibility: hidden;
+      opacity: 0;
+    }
+    100%{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @keyframes shine {
+    0%{
+      visibility: visible;
+      opacity: 1;
+    }
+    100%{
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+ 
   .leading-20{
     line-height: 4rem;
   }
