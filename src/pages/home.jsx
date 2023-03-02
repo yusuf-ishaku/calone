@@ -2,6 +2,7 @@ import { Navbar } from "../components/navbar";
 import  Star1  from "../assets/Star1.png";
 import Star2 from "../assets/Star2.png";
 import Star3 from "../assets/Star3.png";
+import Bubbles from "../assets/Bubbles.png";
 export const Home = () =>{
     return(
         <>
@@ -31,10 +32,26 @@ export const Home = () =>{
                 </div> 
                 <div className="w-full h-fit p-16">
                     <div className="w-auto h-fit">
-                        <span className="block w-full h-full still tracking-wide text-satoshi font-extrabold text-3xl">Investing with Calone</span>
-                        <span className="block">
+                        <span className="block w-full h-full still tracking-wide text-satoshi font-black text-2xl">Investing with Calone</span>
+                        <span className="block text-lg my-3 w-1/2 leading-9 text-satoshi text-relieve">
                             At Calone, we believe that everyone should have access to smart, effortless savings. That's why we've created a savings platform that makes it easy for you to grow your wealth, without sacrificing your lifestyle.
                         </span>
+                    </div>
+                </div>
+                <div className="w-full -mt-52">
+                        <img src={Bubbles} alt="" />
+                </div>
+                <div className="w-full h-fit p-16">
+                    <div className="w-auto h-fit">
+                        <span className="block w-full h-full still tracking-wide text-satoshi font-black text-2xl">You are our only priority</span>
+                        <span className="block text-lg my-3 w-1/2 leading-9 text-satoshi text-relieve">
+                        Making Your Money Work Harder for You and Reach Your Financial Dreams Sooner.
+                        </span>
+                    </div>
+                    <div className="flex w-full">
+                        <div className="w-auto rounded-sm h-80 flit"></div>
+                        <div className="w-auto"></div>
+                        <div className="w-auto"></div>
                     </div>
                 </div>
             </div>
