@@ -23,6 +23,13 @@
     font-size: 64px;
     font-weight: 900;
   }
+  .flit{
+    background: rgba(255, 255, 255, 0.02);
+    border-color: #292D4A;
+  }
+  .bn{
+    background-color: rgba(128, 128, 128, 0.206);
+  }
   .still{
     background-image: linear-gradient(to right , #D9DCF1, #D9DCF11C );
     background-clip: text;

@@ -3,7 +3,17 @@ import  Star1  from "../assets/Star1.png";
 import Star2 from "../assets/Star2.png";
 import Star3 from "../assets/Star3.png";
 import Bubbles from "../assets/Bubbles.png";
+import Budget from "../assets/Budget.png";
+import BudgetTHover from "../assets/BudgetTHover.png";
+import Secure from "../assets/Secure.png";
+import SecureTHover from "../assets/SecureTHover.png";
+import Goal from "../assets/Goal.png";
+import GoalTHover from "../assets/GoalTHover.png";
+import { useState } from "react";
 export const Home = () =>{
+    const[mike, setMike] = useState(true);
+    const [ju, setJu] = useState(true);
+    const [mi, setMi] = useState(true)
     return(
         <>
             <div className="hero">
@@ -18,10 +28,10 @@ export const Home = () =>{
                             Transform your savings and experience a smarter, more rewarding way to save, with features like budget tracking, goals and rewards, and mobile deposits
                             </p>
                             <span className="block my-4">
-                            <button className="w-fit text-satoshi text-blue-100 border-1 rounded-full p-2 px-4">
-                                Start Investing
-                            </button>
-                        </span>
+                                <button className="w-fit text-satoshi text-blue-100 border-1 rounded-full p-2 px-4">
+                                    Start Investing
+                                </button>
+                            </span>
                         </div>
                         <div className="w-1/2 relative">
                             <span className="absolute hidden end top-0 left-0"><img className="" src={Star1} alt="" /></span>
@@ -48,10 +58,55 @@ export const Home = () =>{
                         Making Your Money Work Harder for You and Reach Your Financial Dreams Sooner.
                         </span>
                     </div>
-                    <div className="flex w-full">
-                        <div className="w-auto rounded-sm h-80 flit"></div>
-                        <div className="w-auto"></div>
-                        <div className="w-auto"></div>
+                    <div className="flex gap-8 w-full my-6">
+                        <div className="w-[30%] rounded-xl h-[500px] hover:border-gray-600 flit border-1" onMouseOver={() =>{setMike(false)}} onMouseOut= {() =>{setMike(true)}}  alt="">
+                            <div className="h-1/2 relative">
+                                <img className="absolute object-cover rounded-md" src={ mike ? Budget : BudgetTHover}  /> 
+                            </div>
+                            <div className="text-satoshi px-4">
+                                <h3 className="text-xl font-bold still">Budget Tracking</h3>
+                                <p className="text-md py-2 text-relieve">
+                                    Stay on top of your finances with budget tracking feature. Our app will help you keep track of your spending and savings, so you can make informed decisions about your finances.
+                                </p>
+                                <span className="block my-4">
+                                    <button className="w-fit bn text-satoshi text-blue-100 border-1 rounded-full p-2 px-4">
+                                        Read More
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="w-[30%] rounded-xl h-[500px] hover:border-gray-600 flit border-1" onMouseOver={() =>{setJu(false)}} onMouseOut= {() =>{setJu(true)}}>
+                            <div className="h-1/2 relative">
+                                <img className="absolute object-cover rounded-md" src={ ju ? Secure : SecureTHover}   alt="" /> 
+                            </div>
+                            <div className="text-satoshi px-4">
+                                <h3 className="text-xl font-bold still">Secure and Insured</h3>
+                                <p className="text-md py-2 text-relieve">
+                                Feel confident about your savings with Calone finance. Our digital platform is fully secure and insured, so your money is always safe and protected.
+                                </p>
+                                <span className="block my-4">
+                                    <button className="w-fit bn text-satoshi text-blue-100 border-1 rounded-full p-2 px-4">
+                                        Read More
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="w-[30%] rounded-xl h-[500px] hover:border-gray-600 flit border-1" onMouseOver={() =>{setMi(false)}} onMouseOut= {() =>{setMi(true)}}  >
+                            <div className="h-1/2 relative">
+                                <img className="absolute object-cover rounded-md" src={ mi ? Goal : GoalTHover} alt="" /> 
+                            </div>
+                            <div className="text-satoshi px-4">
+                                <h3 className="text-xl font-bold still">Goals and Rewards</h3>
+                                <p className="text-md py-2 text-relieve">
+                                Stay motivated to save with Calone goals and rewards system. Set your savings goals, track your progress, and earn rewards for reaching your milestones.
+                                </p>
+                                <span className="block my-4">
+                                    <button className="w-fit bn text-satoshi text-blue-100 border-1 rounded-full p-2 px-4">
+                                        Read More
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
