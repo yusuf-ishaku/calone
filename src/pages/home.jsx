@@ -9,10 +9,10 @@ export const Home = () =>{
                 <div className="outer  py-10">
                     <Navbar></Navbar>
                     <div className="w-full flex px-16 p-4">
-                        <div className="w-1/2">
-                            <span className="text-3xl tracking-widest text-satoshi text-relieve text-[64px] leading-20 font-black">
+                        <div className="w-2/3">
+                            <p className="still text-g text-satoshi text-relieve">
                                 Revolutionize the way you save and grow your wealth
-                            </span> 
+                            </p> 
                         </div>
                         <div className="w-1/2 relative">
                             <img className="absolute hidden top-0 left-0" src={Star1} alt="" />

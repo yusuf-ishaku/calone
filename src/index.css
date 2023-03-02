@@ -19,6 +19,15 @@
     font-family: 'Satoshi', sans-serif;
     
   }
+  .text-g{
+    font-size: 64px;
+    font-weight: 900;
+  }
+  .still{
+    background-image: linear-gradient(to right , #D9DCF1, #D9DCF11C );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .leading-20{
     line-height: 4rem;
   }
