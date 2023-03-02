@@ -3,21 +3,33 @@
 @tailwind utilities;
 
 @layer components {
-  .text-here{
+  .text-zen{
     font-family: 'Zen Dots', cursive;
     color: #C0C3D8;
   }
   .hero{
-    background: linear-gradient(#373636,#1E1E1E, #1E1E1E);
+    background: linear-gradient(#000122,#000212, #000212);
     
   }
   .fly{
     border-bottom-width: 0.1rem;
-    border-color: #d6d9ee;
+    border-color: #808082;
+  }
+  .text-satoshi{
+    font-family: 'Satoshi', sans-serif;
+    
+  }
+  .leading-20{
+    line-height: 4rem;
+  }
+  .text-relieve{
+    color:#777A98;
+  }
+  .border-1{
+    border-width: 1px;
   }
   .outer{
-    background-image: url("./assets/Component 14.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url("./assets/Fly.png");
+    background-size: auto;
   }
 }
