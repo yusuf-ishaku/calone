@@ -30,6 +30,9 @@
   .bn{
     background-color: rgba(128, 128, 128, 0.206);
   }
+  .cover{
+    background: linear-gradient(to right, #020629, #020629);
+  }
   .still{
     background-image: linear-gradient(to right , #D9DCF1, #D9DCF11C );
     background-clip: text;

@@ -10,13 +10,14 @@ import SecureTHover from "../assets/SecureTHover.png";
 import Goal from "../assets/Goal.png";
 import GoalTHover from "../assets/GoalTHover.png";
 import { useState } from "react";
+import { AuthCards } from "../components/authCards";
 export const Home = () =>{
     const[mike, setMike] = useState(true);
     const [ju, setJu] = useState(true);
     const [mi, setMi] = useState(true)
     return(
         <>
-            <div className="hero">
+            <div className="hero p-10">
                 <div className="outer">
                     <Navbar></Navbar>
                     <div className="w-full h-fit flex px-16 py-16">
@@ -108,6 +109,24 @@ export const Home = () =>{
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="p-16 w-full h-fit">
+                    <div className="w-auto h-fit">
+                        <span className="block w-full h-full still tracking-wide text-satoshi font-black text-2xl">What we offer</span>
+                        <span className="block text-lg my-3 w-1/2 leading-9 text-satoshi text-relieve">
+                        Making Your Money Work Harder for You and Reach Your Financial Dreams Sooner.
+                        </span>
+                    </div>
+                    <div className="w-full grid grid-cols-3 gap-8 grid-rows-2">
+                        <AuthCards tag="Round-Up Savings" info="Make saving a habit with our round-up savings feature. We'll round up your purchases to the nearest dollar and automatically transfer the change to your savings account."></AuthCards>
+                        <AuthCards tag="24/7 Access" info="Take control of your savings with 24/7 access. Check your account balance, track your progress, and manage your savings anytime, anywhere with our user-friendly app and website."></AuthCards>
+                        <AuthCards tag="High Interest Rates" info="Earn more on your savings with Calone high interest rates. Our rates are competitive and transparent, with no hidden fees."></AuthCards>
+                        <AuthCards tag="Mobile Deposits" info="Deposit your money from anywhere, anytime with mobile deposit feature. Simply take a photo of your check with your smartphone and deposit it directly into your savings account."></AuthCards>
+                        <AuthCards tag="High Interest Rates" info="Earn more on your savings with Calone high interest rates. Our rates are competitive and transparent, with no hidden fees."></AuthCards>
+                    </div>
+                </div>
+                <div className="w-auto h-40 cover mx-16 mb-10">
+
                 </div>
             </div>
             
